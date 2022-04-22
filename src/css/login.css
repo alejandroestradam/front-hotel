@@ -1,0 +1,54 @@
+.login {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  text-align: center;
+}
+.register {
+  flex-direction: column;
+  height: 70vh;
+}
+
+.username p {
+  font-size: 14px;
+  margin: 0;
+  text-align: start;
+}
+.register input {
+  width: 350px;
+  height: 30px;
+}
+.register button {
+  width: 350px;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  background-color: #01a6e6;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0;
+}
+.register button:hover {
+  cursor: pointer;
+  background-color: #005a9c;
+}
+.terms {
+  border-top: 0.5px solid #b0b0b0;
+  width: 350px;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.terms p {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}

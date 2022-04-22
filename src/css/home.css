@@ -1,0 +1,30 @@
+.home{
+    position: relative;
+    height: 100vh;
+}
+.btn-book{
+    position: absolute;
+    font-weight: 600;
+    bottom: 50px;
+    width: 200px;
+    height: 40px;
+    background-color: #01a6e6;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 500px;
+    z-index: 2
+}
+.btn-book:hover{
+    cursor: pointer;
+    transform: translateY(-5%);
+    background-color: #005a9c;
+}
+.description{
+    width: 80%;
+    margin: auto;
+}

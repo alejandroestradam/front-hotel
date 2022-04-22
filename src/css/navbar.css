@@ -1,0 +1,109 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: absolute;
+  z-index: 2;
+  width: 95vw;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+.imglogo {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.logo h1 {
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  margin-left: 15px;
+}
+.logo img {
+  width: 64px;
+  height: 64px;
+  clip-path: inset(49px 64px 64px 64px);
+}
+
+#login {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.loginFalse {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  width: 300px;
+}
+.loginTrue {
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  height: 100%;
+  width: 500px;
+  justify-content: space-between;
+}
+.loginTrue p {
+  color: white;
+  font-weight: 700;
+  margin-right: 10px;
+  margin-left: 0px;
+  width: 180px;
+  text-align: end;
+}
+.btn-logout {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  width: 100px;
+}
+.btn-logout:hover {
+  color: #d3d3d3;
+  cursor: pointer;
+}
+.drop {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  background-color: transparent;
+}
+.user {
+  background-color: white;
+  border-radius: 10px;
+}
+.links {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  width: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.links:hover {
+  transform: translateY(-5%);
+  background-color: #005a9c;
+}
+.modal {
+  background-color: white;
+  opacity: 1;
+}
+.loginFalse a{
+  background-color: #01a6e6;
+  padding: 10px;
+}
