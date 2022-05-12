@@ -7,15 +7,17 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import '../../css/gridrooms.css';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const Gridrooms = () => {
     const [categories, setCategories] = React.useState([]);
+    let navigate = useNavigate();
 
     React.useEffect(()=>{
-        axios.get('http://localhost:4000/category')
+        axios.get('http://localhost:4000/api/categories/obtain')
         .then(function (response) {
         setCategories(response.data);
-        console.log(response);
+        console.log(response.data[0].description);
         })
         .catch(function (error) {
         console.log(error);
@@ -28,25 +30,25 @@ const Gridrooms = () => {
         <div className="grid">
             {categories.map((obj, index)=>{
                 return (
-                <div className="card">
+                <div className="category">
                     <Card sx={{ maxWidth: 350 , height: 550}}>
                         <CardMedia
                             component="img"
                             alt="room"
                             height="300"
-                            image={categories[index].image_category}
+                            image={categories[index].images_category[0]}
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
-                                {categories[index].name_category}
+                                {categories[index].name}
                             </Typography>
                             <Typography variant="body2" color="text.secondary" className='roomInfo'>
-                                {categories[index].description_category}
+                                {categories[index].description}
                             </Typography>
                         </CardContent>
-                        <CardActions className='cardActions'>
-                            <Button size="small" clas>Book Now</Button>
-                        </CardActions>
+                        <div className='cardAction'>
+                            <button className='book' onClick={()=>navigate('/reservation', { replace: true })}>Book Now</button>
+                        </div>
                     </Card>
                 </div>
                 )

@@ -57,3 +57,10 @@
   grid-gap: 10px;
   margin-bottom: 20px;
 }
+.select{
+  width: 350px;
+}
+.submit{
+  width: 350px;
+  height: 40px;
+}

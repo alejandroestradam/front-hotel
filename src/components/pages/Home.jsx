@@ -2,16 +2,23 @@ import React from 'react';
 import Slider from '../small-components/Slider';
 import '../../css/home.css';
 import Gridrooms from '../small-components/Gridrooms';
+import { useNavigate } from 'react-router-dom';
+import { items } from '../../helpers/variables';
+import Footer from '../small-components/Footer';
 
 
 const Home = () => {
-
-
+  let navigate = useNavigate();
   return (
+    <>
     <div className='home'>
       <div className="slider">
-        <Slider/>
-        <button className='btn-book'>Book now</button>
+        <Slider
+          items={items}
+          width='100%' 
+          height='600px'
+        />
+        <button className='btn-book' onClick={()=>navigate('/reservation', { replace: true })}>Book now</button>
       </div>
       <div className="description">
         <h2>Posada Real Hotel</h2>
@@ -20,7 +27,9 @@ const Home = () => {
       <div className="rooms">
         <Gridrooms/>
       </div>
+      <Footer/>
     </div>
+    </>
   )
 }
 

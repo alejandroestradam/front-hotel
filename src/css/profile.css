@@ -1,0 +1,60 @@
+.profile{
+    width: 80vw;
+    height: 100vh;
+    padding-top: 10vh;
+    margin: auto;
+}
+.profileinfo{
+    margin-left: 240px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.update-btn{
+    width: 2.25rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(1, 166, 230);
+    background-image: url("https://img.icons8.com/material-outlined/24/FFFFFF/edit--v1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.update-btn:hover{
+    cursor: pointer;
+    background-color: #034694;
+}
+.btn-error{
+    width: 140px;
+    height: 45px;
+    background-color: #d32f2f ;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-error:hover{
+    cursor: pointer;
+    background-color: #9b3130  ;
+}
+.reservationCards{
+    width: 100%;
+}
+.reservationInfo{
+    display: flex;
+    padding: 1.5rem;
+}
+.reservationContent{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pass{
+    width: 30%;
+}

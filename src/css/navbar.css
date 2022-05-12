@@ -9,7 +9,6 @@
   padding-left: 2.5vw;
   padding-right: 2.5vw;
 }
-
 .logo {
   display: flex;
   align-items: center;
@@ -21,7 +20,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-.logo h1 {
+.navTitle {
   font-weight: 500;
   font-size: 20px;
   color: white;
@@ -93,6 +92,7 @@
   margin-right: 5px;
   text-align: center;
   border-radius: 5px;
+  justify-content: center;
 }
 
 .links:hover {

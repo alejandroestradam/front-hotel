@@ -1,0 +1,10 @@
+.sidebar{
+    margin-top: 10vh;
+    z-index: 0;
+}
+.MuiDrawer-root{
+    z-index: 0;
+}
+.list{
+    height: 75vh;
+}
